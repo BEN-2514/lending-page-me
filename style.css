@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #22FD87;
+    --cor-secundaria: #000;
+    --cor-terciaria: #D9863D;
+    --cor-quartriaria: #f6f6f6;
+
+    --cor-hover: #34bce5;
+    --cor-hover2: #272727;
+
+    --fonte-primaria: "Krona One" sans-serif;
+    --fonte-segundaria: "Montserrat" sans-serif;
+
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing:border-box;
+    background: var(--cor-secundaria);
+    color: var(--cor-quartriaria);
+    
+} 
+
+.cabecalho { 
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menus {
+    display: flex;
+    gap: 80px;
+}
+
+.menu {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.menu:hover {
+    color: var(--cor-hover);
+}
+
+
+.apresentacao-sobre {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+}
+
+
+.titulo-destaque {
+    color: var(--cor-primaria);
+    padding-right: 0.1em;
+}
+
+.titulo-destaque:hover {
+    color: var(--cor-hover);
+}
+
+.frase-inicial {
+    font-size: 4.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao-texto {
+    font-size: 2.5rem;
+    font-family: var(--fonte-secundaria);
+} 
+
+.link-sobre {
+    color: var(--cor-primaria);
+}
+
+.botoes-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao-redes-titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.apresentacao-link-perfil {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-primaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-quartriaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-link-perfil:hover {
+    border-color: var(--cor-hover);
+    background-color: var(--cor-hover2);
+    scale: 1.1;
+    transition: .5s;
+}
+
+ .foto-perfil {
+    width: auto;
+ }
+
+ .foto-perfil:hover {
+    scale: 1.1;
+    transition: .4s;
+ }
+
+.minhas-formacoes {
+    display: flex;
+    justify-content: center;
+    padding-left: 100%;
+    margin-top: 10%;
+}
+
+.formacoes-lista img {
+    width: 20rem
+}
+
+.formacoes-lista {
+    display: flex;
+    padding: 1.5em;
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+} 
+
+.rodape:hover {
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 1024px) {
+    .cabecalho{
+        padding: 7%;  
+   }
+   .cabecalho-menus {
+       justify-content: center;
+   }
+   .apresentacao-sobre {
+       flex-direction: column-reverse;
+       padding: 5%;
+   }
+   .apresentacao-conteudo {
+       width: auto;
+   }
+
+   .minhas-formacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0%;
+   }
+
+   .formacoes-lista {
+        padding: 1em;
+   }
+
+   .formacoes-lista img {
+        width: 40rem;
+   }
+
+} 
+
+@media (max-width: 600px) {
+    .apresentacao-sobre {
+        flex-direction: column-reverse;
+    }
+    .apresentacao-conteudo {
+        width: auto;
+    }
+
+    .frase-inicial {
+        font-size: 3rem;
+    }
+
+    .apresentacao-texto {
+        font-size: 2rem;
+    }
+
+    .cabecalho {
+        padding: 7% 8% 11% 10%;
+    }
+    .cabecalho-menus {
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+    .menu {
+        font-size: 20px;
+    }
+    .apresentacao-link-perfil {
+        width: 70%;
+    }
+    .foto-perfil {
+        width: 100%;
+    }
+
+    .minhas-formacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .formacoes-lista img {
+        width: 16rem;
+    }
+}
